@@ -1,0 +1,3 @@
+# Install from the project root, keeping the existing training versions pinned:
+# uv pip install --python .venv/Scripts/python.exe -c requirements-lock.txt -r web/requirements.txt
+gradio==6.30.0

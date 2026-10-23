@@ -1,0 +1,18 @@
+{
+  "run_name": "full-roberta-base",
+  "purpose": "full_data_baseline",
+  "output_directory": "outputs/full-roberta-base",
+  "train_size": 0,
+  "validation_size": 0,
+  "max_length": 128,
+  "batch_size": 1,
+  "eval_batch_size": 2,
+  "gradient_accumulation_steps": 16,
+  "epochs": 3,
+  "learning_rate": 0.00002,
+  "weight_decay": 0.01,
+  "warmup_fraction": 0.1,
+  "threads": 4,
+  "seed": 42,
+  "validation_seed": 43
+}

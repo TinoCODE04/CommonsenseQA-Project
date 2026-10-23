@@ -1,0 +1,10 @@
+{
+  "status": "released",
+  "helper_pid": 22404,
+  "training_worker_pid": 34308,
+  "training_worker_created_at_utc": "2026-10-15T20:12:56.645213+00:00",
+  "started_at_utc": "2026-10-15T20:17:51.733052+00:00",
+  "previous_execution_state": 2147483648,
+  "scope": "Prevent idle sleep until this specific training worker exits; release on helper exit.",
+  "stopped_at_utc": "2026-10-16T01:36:32.273996+00:00"
+}

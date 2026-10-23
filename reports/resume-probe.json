@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "Installed MultipleChoiceTrainer using a tiny randomly initialized RoBERTa; not a full-size model checkpoint resume.",
+  "examples": 5,
+  "gradient_accumulation_steps": 2,
+  "epochs": 3,
+  "interrupted_at_step": 3,
+  "final_step": 9,
+  "includes_partial_accumulation_group": true,
+  "final_max_parameter_difference_from_uninterrupted": 0.0,
+  "scheduler_state_matches": true,
+  "checkpoint_model_optimizer_scheduler_rng_present": true
+}

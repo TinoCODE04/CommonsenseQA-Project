@@ -1,0 +1,52 @@
+{
+  "python": "3.14.2",
+  "platform": "Windows",
+  "architecture": "AMD64",
+  "virtual_environment": ".venv",
+  "versions": {
+    "pip": "25.3",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.0",
+    "datasets": "5.1.0",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "2.2.0",
+    "tokenizers": "0.23.3",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.0"
+  },
+  "checks": {
+    "pip_check": "passed",
+    "cpu_backend": "passed",
+    "multiple_choice_logits_shape": [
+      2,
+      5
+    ],
+    "finite_loss": 1.6133332252502441,
+    "backward_and_parameter_update": "passed",
+    "datasets_nested_choices": "passed",
+    "trainer_cpu_initialization": "passed"
+  },
+  "verification_used": "Initial environment checks used a randomly initialized miniature RoBERTa and synthetic examples. Subsequent real-data, pretrained-model, and training checks are recorded in the linked reports.",
+  "pretrained_weights_downloaded": true,
+  "commonsenseqa_downloaded": true,
+  "dataset_report": "reports/data-info.json",
+  "dataset_directory": "data/commonsense_qa",
+  "model_report": "reports/model-info.json",
+  "model_snapshot": ".cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "trial_training_completed": true,
+  "full_dataset_training_completed": true,
+  "trial_report": "reports/trial-roberta-base.json",
+  "trial_checkpoint": "outputs/trial-roberta-base/checkpoint-16",
+  "training_compatibility_report": "reports/training-compatibility.json",
+  "full_training_config": "configs/full.json",
+  "full_training_launch_record": "reports/full-roberta-base-launch.json",
+  "full_training_preflight_report": "reports/full-training-preflight.json",
+  "trainer_resume_probe_report": "reports/resume-probe.json",
+  "full_training_report": "reports/full-roberta-base.json",
+  "full_training_checkpoint": "outputs/full-roberta-base/checkpoint-1827",
+  "full_training_result_verification": "reports/full-result-verification.json",
+  "first_baseline_summary": "reports/first-baseline-summary.md",
+  "initial_model_recheck_report": "reports/initial-model-recheck.json",
+  "accuracy_evidence_guide": "reports/accuracy-evidence.md"
+}

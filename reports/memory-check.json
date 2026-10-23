@@ -1,0 +1,523 @@
+{
+  "checked_at_utc": "2026-10-16T08:08:10.350056+00:00",
+  "physical_memory": {
+    "total_gib": 15.64,
+    "available_gib": 2.13,
+    "used_percent": 86.4,
+    "cached_gib": null,
+    "cache_note": "The Windows psutil memory snapshot does not expose a cached field; cache size is not measured here."
+  },
+  "pagefile": {
+    "total_gib": 23.0,
+    "used_gib": 2.38,
+    "used_percent": 10.4
+  },
+  "system_commit": {
+    "committed_gib": 24.58,
+    "commit_limit_gib": 38.64,
+    "commit_peak_gib": 27.09,
+    "kernel_nonpaged_gib": 0.73,
+    "kernel_paged_gib": 0.7
+  },
+  "top_processes_by_working_set": [
+    {
+      "pid": 32840,
+      "name": "Code.exe",
+      "working_set_mib": 1912.5,
+      "private_commit_mib": 2127.6
+    },
+    {
+      "pid": 23272,
+      "name": "Code.exe",
+      "working_set_mib": 476.8,
+      "private_commit_mib": 595.9
+    },
+    {
+      "pid": 21896,
+      "name": "chrome.exe",
+      "working_set_mib": 419.6,
+      "private_commit_mib": 351.0
+    },
+    {
+      "pid": 30584,
+      "name": "Code.exe",
+      "working_set_mib": 402.0,
+      "private_commit_mib": 497.8
+    },
+    {
+      "pid": 33828,
+      "name": "Code.exe",
+      "working_set_mib": 371.3,
+      "private_commit_mib": 589.5
+    },
+    {
+      "pid": 7360,
+      "name": "MsMpEng.exe",
+      "working_set_mib": 323.6,
+      "private_commit_mib": 481.4
+    },
+    {
+      "pid": 5460,
+      "name": "chrome.exe",
+      "working_set_mib": 256.0,
+      "private_commit_mib": 274.6
+    },
+    {
+      "pid": 11376,
+      "name": "explorer.exe",
+      "working_set_mib": 240.8,
+      "private_commit_mib": 341.3
+    },
+    {
+      "pid": 1772,
+      "name": "ChatGPT.exe",
+      "working_set_mib": 228.1,
+      "private_commit_mib": 318.0
+    },
+    {
+      "pid": 17816,
+      "name": "ChatGPT.exe",
+      "working_set_mib": 227.7,
+      "private_commit_mib": 763.5
+    },
+    {
+      "pid": 17424,
+      "name": "ChatGPT.exe",
+      "working_set_mib": 217.8,
+      "private_commit_mib": 385.9
+    },
+    {
+      "pid": 37408,
+      "name": "codex.exe",
+      "working_set_mib": 206.2,
+      "private_commit_mib": 151.9
+    },
+    {
+      "pid": 31992,
+      "name": "Code.exe",
+      "working_set_mib": 198.9,
+      "private_commit_mib": 324.6
+    },
+    {
+      "pid": 24876,
+      "name": "chrome.exe",
+      "working_set_mib": 193.3,
+      "private_commit_mib": 146.0
+    },
+    {
+      "pid": 13808,
+      "name": "Code.exe",
+      "working_set_mib": 189.7,
+      "private_commit_mib": 123.8
+    },
+    {
+      "pid": 14840,
+      "name": "TextInputHost.exe",
+      "working_set_mib": 172.3,
+      "private_commit_mib": 212.9
+    },
+    {
+      "pid": 20036,
+      "name": "Weixin.exe",
+      "working_set_mib": 166.1,
+      "private_commit_mib": 210.7
+    },
+    {
+      "pid": 14340,
+      "name": "chrome.exe",
+      "working_set_mib": 148.2,
+      "private_commit_mib": 431.1
+    }
+  ],
+  "top_application_groups_by_working_set": [
+    {
+      "name": "Code.exe",
+      "processes": 18,
+      "working_set_mib_sum": 4239.0,
+      "private_commit_mib_sum": 5248.6
+    },
+    {
+      "name": "chrome.exe",
+      "processes": 24,
+      "working_set_mib_sum": 2127.8,
+      "private_commit_mib_sum": 2469.0
+    },
+    {
+      "name": "ChatGPT.exe",
+      "processes": 20,
+      "working_set_mib_sum": 1147.2,
+      "private_commit_mib_sum": 2540.5
+    },
+    {
+      "name": "svchost.exe",
+      "processes": 92,
+      "working_set_mib_sum": 825.1,
+      "private_commit_mib_sum": 596.1
+    },
+    {
+      "name": "Feishu.exe",
+      "processes": 12,
+      "working_set_mib_sum": 630.8,
+      "private_commit_mib_sum": 1142.6
+    },
+    {
+      "name": "pwsh.exe",
+      "processes": 4,
+      "working_set_mib_sum": 356.8,
+      "private_commit_mib_sum": 157.4
+    },
+    {
+      "name": "MsMpEng.exe",
+      "processes": 1,
+      "working_set_mib_sum": 323.6,
+      "private_commit_mib_sum": 481.4
+    },
+    {
+      "name": "msedge.exe",
+      "processes": 16,
+      "working_set_mib_sum": 313.0,
+      "private_commit_mib_sum": 993.8
+    },
+    {
+      "name": "codex.exe",
+      "processes": 3,
+      "working_set_mib_sum": 290.6,
+      "private_commit_mib_sum": 357.0
+    },
+    {
+      "name": "explorer.exe",
+      "processes": 1,
+      "working_set_mib_sum": 240.8,
+      "private_commit_mib_sum": 341.3
+    },
+    {
+      "name": "msedgewebview2.exe",
+      "processes": 12,
+      "working_set_mib_sum": 223.9,
+      "private_commit_mib_sum": 369.0
+    },
+    {
+      "name": "Weixin.exe",
+      "processes": 5,
+      "working_set_mib_sum": 186.8,
+      "private_commit_mib_sum": 436.5
+    },
+    {
+      "name": "TextInputHost.exe",
+      "processes": 1,
+      "working_set_mib_sum": 172.3,
+      "private_commit_mib_sum": 212.9
+    },
+    {
+      "name": "WeChatAppEx.exe",
+      "processes": 7,
+      "working_set_mib_sum": 167.1,
+      "private_commit_mib_sum": 514.3
+    },
+    {
+      "name": "BullVPN Client.exe",
+      "processes": 1,
+      "working_set_mib_sum": 129.9,
+      "private_commit_mib_sum": 153.2
+    }
+  ],
+  "python_processes": [
+    {
+      "pid": 9572,
+      "name": "python.exe",
+      "working_set_mib": 0.6,
+      "private_commit_mib": 0.7,
+      "task": "other_python",
+      "current_diagnostic_process": false,
+      "age_minutes": 1545.6,
+      "executable": "C:\\Users\\Administrator\\AppData\\Local\\uv\\cache\\archive-v0\\JC4drZrNfyO8oC3g\\Scripts\\python.exe"
+    },
+    {
+      "pid": 19352,
+      "name": "python.exe",
+      "working_set_mib": 67.6,
+      "private_commit_mib": 47.9,
+      "task": "other_python",
+      "current_diagnostic_process": false,
+      "age_minutes": 0.9,
+      "executable": "C:\\Users\\Administrator\\AppData\\Roaming\\uv\\python\\cpython-3.13.11-windows-x86_64-none\\python.exe"
+    },
+    {
+      "pid": 19996,
+      "name": "python.exe",
+      "working_set_mib": 3.9,
+      "private_commit_mib": 0.8,
+      "task": "python_stdin_process",
+      "current_diagnostic_process": false,
+      "age_minutes": 0.0,
+      "executable": "D:\\CommonsenseQA\\.venv\\Scripts\\python.exe"
+    },
+    {
+      "pid": 21672,
+      "name": "python.exe",
+      "working_set_mib": 3.9,
+      "private_commit_mib": 0.7,
+      "task": "other_python",
+      "current_diagnostic_process": false,
+      "age_minutes": 0.9,
+      "executable": "C:\\Users\\Administrator\\AppData\\Local\\uv\\cache\\archive-v0\\JC4drZrNfyO8oC3g\\Scripts\\python.exe"
+    },
+    {
+      "pid": 22980,
+      "name": "python.exe",
+      "working_set_mib": 1.4,
+      "private_commit_mib": 47.7,
+      "task": "other_python",
+      "current_diagnostic_process": false,
+      "age_minutes": 1545.6,
+      "executable": "C:\\Users\\Administrator\\AppData\\Roaming\\uv\\python\\cpython-3.13.11-windows-x86_64-none\\python.exe"
+    },
+    {
+      "pid": 29864,
+      "name": "python.exe",
+      "working_set_mib": 26.0,
+      "private_commit_mib": 17.2,
+      "task": "python_stdin_process",
+      "current_diagnostic_process": true,
+      "age_minutes": 0.0,
+      "executable": "C:\\Program Files\\Python314\\python.exe"
+    }
+  ],
+  "unreadable_processes": 0,
+  "note": "Working sets can share physical pages, so summing them can double-count. Private commit is not current resident physical RAM. Process command lines were not collected in this report.",
+  "vscode_process_roles": [
+    {
+      "pid": 32840,
+      "parent_pid": 33828,
+      "role_from_arguments": "main_or_other",
+      "working_set_mib": 1883.9,
+      "private_commit_mib": 2098.6,
+      "age_minutes": 107.6
+    },
+    {
+      "pid": 33828,
+      "parent_pid": 20168,
+      "role_from_arguments": "utility",
+      "working_set_mib": 372.7,
+      "private_commit_mib": 591.0,
+      "age_minutes": 109.0
+    },
+    {
+      "pid": 17724,
+      "parent_pid": 25436,
+      "role_from_arguments": "status_diagnostic",
+      "working_set_mib": 187.7,
+      "private_commit_mib": 98.4,
+      "age_minutes": 0.7
+    },
+    {
+      "pid": 20168,
+      "parent_pid": 11376,
+      "role_from_arguments": "main_or_other",
+      "working_set_mib": 133.9,
+      "private_commit_mib": 159.5,
+      "age_minutes": 1026.9
+    },
+    {
+      "pid": 25436,
+      "parent_pid": 18544,
+      "role_from_arguments": "status_diagnostic",
+      "working_set_mib": 127.8,
+      "private_commit_mib": 69.9,
+      "age_minutes": 0.7
+    },
+    {
+      "pid": 34764,
+      "parent_pid": 17724,
+      "role_from_arguments": "utility",
+      "working_set_mib": 118.8,
+      "private_commit_mib": 11.4,
+      "age_minutes": 0.6
+    },
+    {
+      "pid": 4472,
+      "parent_pid": 20168,
+      "role_from_arguments": "utility",
+      "working_set_mib": 96.7,
+      "private_commit_mib": 81.2,
+      "age_minutes": 109.0
+    },
+    {
+      "pid": 21588,
+      "parent_pid": 33828,
+      "role_from_arguments": "main_or_other",
+      "working_set_mib": 75.2,
+      "private_commit_mib": 33.6,
+      "age_minutes": 107.6
+    },
+    {
+      "pid": 25076,
+      "parent_pid": 33828,
+      "role_from_arguments": "main_or_other",
+      "working_set_mib": 75.1,
+      "private_commit_mib": 25.1,
+      "age_minutes": 108.0
+    },
+    {
+      "pid": 36472,
+      "parent_pid": 33828,
+      "role_from_arguments": "main_or_other",
+      "working_set_mib": 68.2,
+      "private_commit_mib": 32.3,
+      "age_minutes": 104.8
+    },
+    {
+      "pid": 6840,
+      "parent_pid": 20168,
+      "role_from_arguments": "utility",
+      "working_set_mib": 51.4,
+      "private_commit_mib": 145.3,
+      "age_minutes": 1026.5
+    },
+    {
+      "pid": 33720,
+      "parent_pid": 20168,
+      "role_from_arguments": "utility",
+      "working_set_mib": 48.7,
+      "private_commit_mib": 99.1,
+      "age_minutes": 1026.8
+    },
+    {
+      "pid": 30292,
+      "parent_pid": 20168,
+      "role_from_arguments": "utility",
+      "working_set_mib": 25.8,
+      "private_commit_mib": 149.5,
+      "age_minutes": 1026.8
+    },
+    {
+      "pid": 32156,
+      "parent_pid": 20168,
+      "role_from_arguments": "utility",
+      "working_set_mib": 25.8,
+      "private_commit_mib": 17.4,
+      "age_minutes": 1026.8
+    },
+    {
+      "pid": 19364,
+      "parent_pid": 30292,
+      "role_from_arguments": "main_or_other",
+      "working_set_mib": 4.3,
+      "private_commit_mib": 206.4,
+      "age_minutes": 1026.8
+    },
+    {
+      "pid": 13748,
+      "parent_pid": 20168,
+      "role_from_arguments": "crashpad-handler",
+      "working_set_mib": 3.3,
+      "private_commit_mib": 9.4,
+      "age_minutes": 1026.8
+    }
+  ],
+  "vscode_status_cli_note": "The diagnostic CLI reported a Windows access-denied error; process-role labels below are inferred from process arguments, not window names.",
+  "followup_checked_at_utc": "2026-10-16T08:10:29.735254+00:00",
+  "largest_vscode_components": [
+    {
+      "pid": 32840,
+      "identified_components": [
+        "Pylance Python language server"
+      ],
+      "javascript_entry_filenames": [
+        "server.bundle.js"
+      ],
+      "working_set_mib": 1460.0
+    },
+    {
+      "pid": 33828,
+      "identified_components": [],
+      "javascript_entry_filenames": [],
+      "working_set_mib": 376.1
+    }
+  ],
+  "owned_status_diagnostic_cleanup": {
+    "terminated": [
+      {
+        "pid": 34764,
+        "name": "Code.exe",
+        "reason": "Agent-started code --status diagnostic or its newly spawned descendant"
+      },
+      {
+        "pid": 17724,
+        "name": "Code.exe",
+        "reason": "Agent-started code --status diagnostic or its newly spawned descendant"
+      },
+      {
+        "pid": 25436,
+        "name": "Code.exe",
+        "reason": "Agent-started code --status diagnostic or its newly spawned descendant"
+      }
+    ],
+    "remaining_owned_process_ids": []
+  },
+  "latest_snapshot": {
+    "checked_at_china_time": "2026-10-16T16:11:51.383220+08:00",
+    "physical_total_gib": 15.64,
+    "physical_available_gib": 2.66,
+    "physical_used_percent": 83.0,
+    "top_groups": [
+      {
+        "name": "Code.exe",
+        "processes": 18,
+        "working_set_gib_sum": 3.66,
+        "private_commit_gib_sum": 4.66
+      },
+      {
+        "name": "chrome.exe",
+        "processes": 24,
+        "working_set_gib_sum": 2.07,
+        "private_commit_gib_sum": 2.41
+      },
+      {
+        "name": "ChatGPT.exe",
+        "processes": 20,
+        "working_set_gib_sum": 1.1,
+        "private_commit_gib_sum": 2.48
+      },
+      {
+        "name": "svchost.exe",
+        "processes": 93,
+        "working_set_gib_sum": 0.81,
+        "private_commit_gib_sum": 0.58
+      },
+      {
+        "name": "Feishu.exe",
+        "processes": 12,
+        "working_set_gib_sum": 0.62,
+        "private_commit_gib_sum": 1.12
+      },
+      {
+        "name": "pwsh.exe",
+        "processes": 4,
+        "working_set_gib_sum": 0.34,
+        "private_commit_gib_sum": 0.15
+      },
+      {
+        "name": "MsMpEng.exe",
+        "processes": 1,
+        "working_set_gib_sum": 0.31,
+        "private_commit_gib_sum": 0.47
+      },
+      {
+        "name": "codex.exe",
+        "processes": 3,
+        "working_set_gib_sum": 0.29,
+        "private_commit_gib_sum": 0.36
+      }
+    ],
+    "pylance": {
+      "pid": 32840,
+      "name": "Pylance",
+      "working_set_gib": 1.43,
+      "private_commit_gib": 1.64
+    },
+    "active_commonsenseqa_training_or_sleep_helper": [],
+    "previous_training_peak_resident_gib": 2.76,
+    "previous_training_peak_private_commit_gib": 3.52
+  }
+}

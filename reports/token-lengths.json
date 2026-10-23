@@ -1,0 +1,23 @@
+{
+  "dataset_revision": "94630fe30dad47192a8546eb75f094926d47e155",
+  "model_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "method": "RoBERTa tokenizer applied to every question-answer pair with special tokens and without truncation or padding.",
+  "train": {
+    "questions": 9741,
+    "question_answer_pairs": 48705,
+    "maximum_pair_tokens": 78,
+    "median_pair_tokens": 20,
+    "questions_with_any_pair_over_64_tokens": 5,
+    "questions_with_any_pair_over_128_tokens": 0
+  },
+  "validation": {
+    "questions": 1221,
+    "question_answer_pairs": 6105,
+    "maximum_pair_tokens": 72,
+    "median_pair_tokens": 20,
+    "questions_with_any_pair_over_64_tokens": 1,
+    "questions_with_any_pair_over_128_tokens": 0
+  },
+  "selected_max_length": 128,
+  "padding": "dynamic within each batch"
+}

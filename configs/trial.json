@@ -1,0 +1,18 @@
+{
+  "run_name": "trial-roberta-base",
+  "purpose": "pipeline_trial",
+  "output_directory": "outputs/trial-roberta-base",
+  "train_size": 256,
+  "validation_size": 64,
+  "max_length": 128,
+  "batch_size": 1,
+  "eval_batch_size": 2,
+  "gradient_accumulation_steps": 16,
+  "epochs": 1,
+  "learning_rate": 0.00002,
+  "weight_decay": 0.01,
+  "warmup_fraction": 0.1,
+  "threads": 4,
+  "seed": 42,
+  "validation_seed": 43
+}

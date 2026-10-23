@@ -1,0 +1,165 @@
+{
+  "source_pdf": "D:\\Document&Desktop\\Documents\\\u81ea\u7136\u8bed\u8a00\u5904\u7406-2026-2027\\COMMONSENSEQA A Question Answering Challenge Targeting Commonsense Knowledge 1811.00937v2.pdf",
+  "source_pdf_sha256": "c725554b0654061c272339872ca32000ce2009fdaa9d54939225f5ecb0a4eb39",
+  "paper_version": "arXiv:1811.00937v2, 15 March 2019",
+  "source_result_table": 5,
+  "source_result_pdf_page": 8,
+  "values_are_percentages": true,
+  "paper_dataset_examples": 12247,
+  "paper_split_ratio": [
+    80,
+    10,
+    10
+  ],
+  "sanity_definition": "Replace the deliberately hard distractors with random ConceptNet distractors; a different, easier evaluation condition.",
+  "results": [
+    {
+      "model": "VecSim+Numberbatch",
+      "trained_on_commonsenseqa": false,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 29.1,
+      "random_split_sanity_test_accuracy_percent": 54.0,
+      "question_concept_split_test_accuracy_percent": 30.3,
+      "question_concept_split_sanity_test_accuracy_percent": 54.9
+    },
+    {
+      "model": "LM1B-REP",
+      "trained_on_commonsenseqa": false,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 26.1,
+      "random_split_sanity_test_accuracy_percent": 39.6,
+      "question_concept_split_test_accuracy_percent": 26.0,
+      "question_concept_split_sanity_test_accuracy_percent": 39.1
+    },
+    {
+      "model": "LM1B-CONCAT",
+      "trained_on_commonsenseqa": false,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 25.3,
+      "random_split_sanity_test_accuracy_percent": 37.4,
+      "question_concept_split_test_accuracy_percent": 25.3,
+      "question_concept_split_sanity_test_accuracy_percent": 35.2
+    },
+    {
+      "model": "VecSim+GloVe",
+      "trained_on_commonsenseqa": false,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 22.3,
+      "random_split_sanity_test_accuracy_percent": 26.8,
+      "question_concept_split_test_accuracy_percent": 20.8,
+      "question_concept_split_sanity_test_accuracy_percent": 27.1
+    },
+    {
+      "model": "BERT-LARGE",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 55.9,
+      "random_split_sanity_test_accuracy_percent": 92.3,
+      "question_concept_split_test_accuracy_percent": 63.6,
+      "question_concept_split_sanity_test_accuracy_percent": 93.2
+    },
+    {
+      "model": "GPT",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 45.5,
+      "random_split_sanity_test_accuracy_percent": 87.2,
+      "question_concept_split_test_accuracy_percent": 55.5,
+      "question_concept_split_sanity_test_accuracy_percent": 88.9
+    },
+    {
+      "model": "ESIM+ELMo",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 34.1,
+      "random_split_sanity_test_accuracy_percent": 76.9,
+      "question_concept_split_test_accuracy_percent": 37.9,
+      "question_concept_split_sanity_test_accuracy_percent": 77.8
+    },
+    {
+      "model": "ESIM+GloVe",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 32.8,
+      "random_split_sanity_test_accuracy_percent": 79.1,
+      "question_concept_split_test_accuracy_percent": 40.4,
+      "question_concept_split_sanity_test_accuracy_percent": 78.2
+    },
+    {
+      "model": "QABilinear+GloVe",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 31.5,
+      "random_split_sanity_test_accuracy_percent": 74.8,
+      "question_concept_split_test_accuracy_percent": 34.2,
+      "question_concept_split_sanity_test_accuracy_percent": 71.8
+    },
+    {
+      "model": "ESIM+Numberbatch",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 30.1,
+      "random_split_sanity_test_accuracy_percent": 74.6,
+      "question_concept_split_test_accuracy_percent": 31.2,
+      "question_concept_split_sanity_test_accuracy_percent": 75.1
+    },
+    {
+      "model": "QABilinear+Numberbatch",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 28.8,
+      "random_split_sanity_test_accuracy_percent": 73.3,
+      "question_concept_split_test_accuracy_percent": 32.0,
+      "question_concept_split_sanity_test_accuracy_percent": 71.6
+    },
+    {
+      "model": "QACompare+GloVe",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 25.7,
+      "random_split_sanity_test_accuracy_percent": 69.2,
+      "question_concept_split_test_accuracy_percent": 34.1,
+      "question_concept_split_sanity_test_accuracy_percent": 71.3
+    },
+    {
+      "model": "QACompare+Numberbatch",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": false,
+      "random_split_test_accuracy_percent": 20.4,
+      "random_split_sanity_test_accuracy_percent": 60.6,
+      "question_concept_split_test_accuracy_percent": 25.2,
+      "question_concept_split_sanity_test_accuracy_percent": 66.8
+    },
+    {
+      "model": "BiDAF++",
+      "trained_on_commonsenseqa": true,
+      "uses_retrieved_context": true,
+      "random_split_test_accuracy_percent": 32.0,
+      "random_split_sanity_test_accuracy_percent": 71.0,
+      "question_concept_split_test_accuracy_percent": 38.4,
+      "question_concept_split_sanity_test_accuracy_percent": 72.0
+    }
+  ],
+  "human_evaluation": {
+    "reported_accuracy_percent": 88.9,
+    "sampled_questions": 100,
+    "workers_per_question": 5,
+    "aggregation": "majority vote; separately sampled evaluation, not the full model test set"
+  },
+  "our_run": {
+    "model": "FacebookAI/roberta-base",
+    "development_accuracy_percent": 58.96805896805897,
+    "development_questions": 1221,
+    "train_questions": 9741,
+    "local_dataset_total_questions": 12102,
+    "evaluation_split": "development",
+    "source": "reports/full-roberta-base.json"
+  },
+  "comparison_limitations": [
+    "Paper Table 5 is test accuracy; our score is development accuracy.",
+    "The model families differ: uncased BERT-LARGE versus RoBERTa-base.",
+    "Dataset sample/version equivalence is not established; reported total counts differ.",
+    "Paper Figure 5 uses the best of three runs per data size; this is not evidence that all Table 5 results are three-run means."
+  ],
+  "table_values_verified_against_pdf_text": true
+}

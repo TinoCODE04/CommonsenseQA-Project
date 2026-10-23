@@ -1,0 +1,15 @@
+{
+  "transformers_version": "5.20.0",
+  "model_class": "RobertaForMultipleChoice",
+  "symptom": "Default Trainer reported summed microbatch loss near 26 for gradient accumulation of 16, instead of mean loss near 1.6.",
+  "cause": "RoBERTa forward accepts generic kwargs, so Trainer assumes its loss already accounts for num_items_in_batch; the model actually returns a per-microbatch mean CrossEntropyLoss.",
+  "fix": "MultipleChoiceTrainer explicitly sets loss_is_scaled_for_ga=False so Trainer divides by the actual number of accumulation steps.",
+  "regression_test": "tests/test_gradient_accumulation.py",
+  "regression_check_after_fix": "passed: accumulated loss and classifier gradient match the combined-batch reference",
+  "observed_before_fix": {
+    "two_microbatch_reported_loss": 3.2189741134643555,
+    "combined_batch_reference_loss": 1.6094870567321777
+  },
+  "interrupted_run_directory": "outputs/trial-roberta-base-unscaled-loss",
+  "interrupted_run_excluded_from_experiment_results": true
+}

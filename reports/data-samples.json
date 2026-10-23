@@ -1,0 +1,283 @@
+{
+  "train": {
+    "original_row": {
+      "id": "075e483d21c29a511267ef62bedc0461",
+      "question": "The sanctions against the school were a punishing blow, and they seemed to what the efforts the school had made to change?",
+      "question_concept": "punishing",
+      "choices": {
+        "label": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "text": [
+          "ignore",
+          "enforce",
+          "authoritarian",
+          "yell at",
+          "avoid"
+        ]
+      },
+      "answerKey": "A"
+    },
+    "label_index_for_training": 0
+  },
+  "validation": {
+    "original_row": {
+      "id": "1afa02df02c908a558b4036e80242fac",
+      "question": "A revolving door is convenient for two direction travel, but it also serves as a security measure at a what?",
+      "question_concept": "revolving door",
+      "choices": {
+        "label": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "text": [
+          "bank",
+          "library",
+          "department store",
+          "mall",
+          "new york"
+        ]
+      },
+      "answerKey": "A"
+    },
+    "label_index_for_training": 0
+  },
+  "test": {
+    "original_row": {
+      "id": "90b30172e645ff91f7171a048582eb8b",
+      "question": "The townhouse was a hard sell for the realtor, it was right next to a high rise what?",
+      "question_concept": "townhouse",
+      "choices": {
+        "label": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "text": [
+          "suburban development",
+          "apartment building",
+          "bus stop",
+          "michigan",
+          "suburbs"
+        ]
+      },
+      "answerKey": ""
+    },
+    "label_index_for_training": null
+  },
+  "repeated_choice_examples": {
+    "train": [
+      {
+        "id": "21db09783c773fed677cd5ec3b71eecf",
+        "question": "What kind of place could have a seafood restaurant?",
+        "question_concept": "seafood restaurant",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "new york",
+            "coastal cities",
+            "city",
+            "coastal cities",
+            "boston"
+          ]
+        },
+        "answerKey": "C"
+      },
+      {
+        "id": "1bca9774955d7e794a6e48ffcf95e728",
+        "question": "What is someone who gets angry after getting drunk likely to participate in?",
+        "question_concept": "getting drunk",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "violence",
+            "falling down",
+            "vomiting",
+            "vomiting",
+            "lower standards"
+          ]
+        },
+        "answerKey": "A"
+      },
+      {
+        "id": "9fd4737d024fb0d6a9f047bed295bddb",
+        "question": "If I had a jar which was likely to spoil if left out, where would I want to put it?",
+        "question_concept": "jar",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "kitchen cupboard",
+            "pantry",
+            "grocery store",
+            "pantry",
+            "refrigerator"
+          ]
+        },
+        "answerKey": "E"
+      }
+    ],
+    "validation": [
+      {
+        "id": "e5ad2184e37ae88b2bf46bf6bc0ed2f4",
+        "question": "Though the thin film seemed fragile, for it's intended purpose it was actually nearly what?",
+        "question_concept": "fragile",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "indestructible",
+            "durable",
+            "undestroyable",
+            "indestructible",
+            "unbreakable"
+          ]
+        },
+        "answerKey": "D"
+      },
+      {
+        "id": "f646f3e064f06423fc25b98500796cf0",
+        "question": "What is someone who isn't clever, bright, or competent called?",
+        "question_concept": "clever",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "clumsy",
+            "ineffectual",
+            "dull",
+            "clumsy",
+            "stupid"
+          ]
+        },
+        "answerKey": "E"
+      },
+      {
+        "id": "8d1563697d751a364d688d6701ebdb39",
+        "question": "What must someone do before they shop?",
+        "question_concept": "shop",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "get money",
+            "have money",
+            "bring cash",
+            "go to market",
+            "bring cash"
+          ]
+        },
+        "answerKey": "A"
+      }
+    ],
+    "test": [
+      {
+        "id": "9b0027a8bdbb4aa5e33cc75bd84aa0b5",
+        "question": "What group of people's homes will usually have a grocery store?",
+        "question_concept": "grocery store",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "town",
+            "strip mall",
+            "street",
+            "neighborhood",
+            "strip mall"
+          ]
+        },
+        "answerKey": ""
+      },
+      {
+        "id": "b887bcc33bb61eb20e37e52ac1ce626f",
+        "question": "From where is a pizza removed before it is served?",
+        "question_concept": "pizza",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "oven",
+            "oven",
+            "restaurant",
+            "popular",
+            "plate"
+          ]
+        },
+        "answerKey": ""
+      },
+      {
+        "id": "bec4f1a2e26fe096a26216d762c78993",
+        "question": "There is normally music at the beginning and end of the programming you watch on what?",
+        "question_concept": "music",
+        "choices": {
+          "label": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "text": [
+            "silence",
+            "silent",
+            "television",
+            "night club",
+            "night club"
+          ]
+        },
+        "answerKey": ""
+      }
+    ]
+  }
+}

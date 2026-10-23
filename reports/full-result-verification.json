@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "development_questions": 1221,
+  "development_correct": 720,
+  "development_incorrect": 501,
+  "development_accuracy": 0.5896805896805897,
+  "before_finetuning_correct": 219,
+  "accuracy_improvement_percentage_points": 41.03194103194103,
+  "training_hours": 5.2687476594166665,
+  "peak_private_gib": 3.5195846557617188,
+  "final_checkpoint_step": 1827,
+  "prediction_labels_and_official_gold_match": true,
+  "all_training_loss_and_grad_norm_finite": true,
+  "offline_checkpoint_reload": "passed",
+  "reload_probe_max_absolute_logit_difference": 0.0,
+  "verified_at_utc": "2026-10-16T02:19:06.001936+00:00",
+  "before_finetuning_count_verification": {
+    "checked_at_utc": "2026-10-16T02:32:03.803703+00:00",
+    "original_before_count_source": "Restored from original saved aggregate accuracy; original before predictions were not saved.",
+    "reconstructed_initial_model_report": "reports/initial-model-recheck.json",
+    "recheck_correct": 219,
+    "matches_original_accuracy": true,
+    "recheck_per_question_records_available": true,
+    "original_before_per_question_agreement_verifiable": false
+  }
+}

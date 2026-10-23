@@ -1,0 +1,105 @@
+{
+  "source": {
+    "dataset_id": "tau/commonsense_qa",
+    "url": "https://huggingface.co/datasets/tau/commonsense_qa",
+    "configuration": "default",
+    "revision": "94630fe30dad47192a8546eb75f094926d47e155",
+    "license": "MIT"
+  },
+  "local_data_directory": "data/commonsense_qa",
+  "cache_paths": {
+    "HF_HOME": ".cache/huggingface",
+    "HF_HUB_CACHE": ".cache/huggingface/hub",
+    "HF_DATASETS_CACHE": ".cache/huggingface/datasets",
+    "HF_XET_CACHE": ".cache/huggingface/xet"
+  },
+  "packages": {
+    "datasets": "5.1.0",
+    "huggingface-hub": "2.2.0",
+    "pyarrow": "26.0.0"
+  },
+  "splits": {
+    "train": {
+      "rows": 9741,
+      "columns": [
+        "id",
+        "question",
+        "question_concept",
+        "choices",
+        "answerKey"
+      ],
+      "structural_errors": {},
+      "answer_distribution": {
+        "A": 1909,
+        "B": 1973,
+        "C": 1946,
+        "D": 1985,
+        "E": 1928
+      },
+      "duplicate_id_rows": 0,
+      "repeated_question_text_rows_after_strip": 0,
+      "repeated_choice_text_rows": 122,
+      "repeated_correct_answer_text_rows": 42,
+      "content_sha256": "232fd24ac84318413083bd8e11be3ee8547e414537942f5b174b710836c0aaef"
+    },
+    "validation": {
+      "rows": 1221,
+      "columns": [
+        "id",
+        "question",
+        "question_concept",
+        "choices",
+        "answerKey"
+      ],
+      "structural_errors": {},
+      "answer_distribution": {
+        "A": 239,
+        "B": 255,
+        "C": 241,
+        "D": 251,
+        "E": 235
+      },
+      "duplicate_id_rows": 0,
+      "repeated_question_text_rows_after_strip": 0,
+      "repeated_choice_text_rows": 24,
+      "repeated_correct_answer_text_rows": 6,
+      "content_sha256": "4e83a600ff0c8ab5f0bbeec89fe45fa35b6e4dd04cb36124c7acb141d233fc14"
+    },
+    "test": {
+      "rows": 1140,
+      "columns": [
+        "id",
+        "question",
+        "question_concept",
+        "choices",
+        "answerKey"
+      ],
+      "structural_errors": {},
+      "answer_distribution": {
+        "UNLABELED": 1140
+      },
+      "duplicate_id_rows": 0,
+      "repeated_question_text_rows_after_strip": 0,
+      "repeated_choice_text_rows": 20,
+      "repeated_correct_answer_text_rows": null,
+      "content_sha256": "e0a1135cf5c950af6ffa2e376831de85cffde250a4e95b1dce956e685f11ceb4"
+    }
+  },
+  "cross_split_overlaps": {
+    "train__validation": {
+      "shared_ids": 0,
+      "shared_question_texts_after_strip": 0
+    },
+    "train__test": {
+      "shared_ids": 0,
+      "shared_question_texts_after_strip": 0
+    },
+    "validation__test": {
+      "shared_ids": 0,
+      "shared_question_texts_after_strip": 0
+    }
+  },
+  "saved_data_round_trip": "passed",
+  "modifications": "None. Official rows, fields, order, and splits are preserved.",
+  "evaluation_note": "Public test answers are absent. Report validation accuracy as development accuracy."
+}

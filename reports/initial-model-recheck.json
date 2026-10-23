@@ -1,0 +1,46 @@
+{
+  "status": "matched_original_before_metric",
+  "rechecked_at_utc": "2026-10-16T02:30:26.929388+00:00",
+  "purpose": "Post-training reconstruction and evaluation of the initial model; not the original run's saved per-question predictions.",
+  "evaluation_only": true,
+  "optimizer_created": false,
+  "source_model": {
+    "model_id": "FacebookAI/roberta-base",
+    "url": "https://huggingface.co/FacebookAI/roberta-base",
+    "revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "license": "MIT"
+  },
+  "source_dataset": {
+    "dataset_id": "tau/commonsense_qa",
+    "url": "https://huggingface.co/datasets/tau/commonsense_qa",
+    "configuration": "default",
+    "revision": "94630fe30dad47192a8546eb75f094926d47e155",
+    "license": "MIT"
+  },
+  "seed": 42,
+  "threads": 4,
+  "max_length": 128,
+  "evaluation_batch_size": 2,
+  "development_questions": 1221,
+  "development_correct": 219,
+  "development_accuracy": 0.17936117936117937,
+  "original_before_accuracy": 0.17936117936117937,
+  "original_before_metrics": {
+    "dev_before_loss": 1.6096625328063965,
+    "dev_before_model_preparation_time": 0.004,
+    "dev_before_accuracy": 0.17936117936117937,
+    "dev_before_runtime": 198.985,
+    "dev_before_samples_per_second": 6.136,
+    "dev_before_steps_per_second": 3.071
+  },
+  "recheck_metrics": {
+    "dev_before_recheck_loss": 1.6096625328063965,
+    "dev_before_recheck_model_preparation_time": 0.0045,
+    "dev_before_recheck_accuracy": 0.17936117936117937,
+    "dev_before_recheck_runtime": 216.4651,
+    "dev_before_recheck_samples_per_second": 5.641,
+    "dev_before_recheck_steps_per_second": 2.823
+  },
+  "matches_original_before_accuracy": true,
+  "predictions": "reports/full-roberta-base-before-predictions-recheck.jsonl"
+}

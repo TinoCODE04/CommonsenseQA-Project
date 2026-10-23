@@ -1,0 +1,72 @@
+{
+  "status_at_launch": "process_started",
+  "launched_at_utc": "2026-10-15T20:12:56.4960169Z",
+  "launcher_pid": 34772,
+  "command": ".venv\\Scripts\\python.exe -u scripts/train.py --config configs/full.json",
+  "working_directory": "D:\\CommonsenseQA",
+  "config": "configs/full.json",
+  "stdout": "reports/full-roberta-base-training.log",
+  "stderr": "reports/full-roberta-base-training.err.log",
+  "completion_report": "reports/full-roberta-base.json",
+  "expected_optimizer_steps": 1827,
+  "note": "Launch metadata only. Check the process and logs for current status; completion is recorded separately.",
+  "source_sha256_at_startup": {
+    "scripts/train.py": "96d8c4e947073b11b2c4848d8c0e8201614b955035ec5918282fbb2c008f2bb5",
+    "scripts/mcqa.py": "a365f9f827a31968d3881c03bb3524be90b05d79080c00feec1bed273001d9b8",
+    "scripts/mcqa_trainer.py": "a4ee657d32825b6a93a444cf524390aa90a156ca6d2a7c3097f6a5191e23dc1b",
+    "scripts/training_monitor.py": "3e78bf4fde05a86d90c5e3adf8c2ab5d0a66df073a4736c552c6af2e894580bd",
+    "scripts/project_env.py": "56f05722dca663a3f2748c0f31b80df7807e9884a49217d6f9334d066a29e59d",
+    "configs/full.json": "47e2204f5f79ebf425388232a40d2225f08965f7dc5da749291e1c2357086101",
+    "requirements-lock.txt": "b83d9d9b4151f8d66507e6f9fe227e0a0258f8916d2608773843182b4225d3a1"
+  },
+  "startup_process_observation": {
+    "checked_at_utc": "2026-10-15T20:14:13.292009+00:00",
+    "processes": [
+      {
+        "pid": 34772,
+        "created_at_utc": "2026-10-15T20:12:56.475872+00:00",
+        "cpu_seconds": 0.015625,
+        "rss_gib": 0.003818511962890625,
+        "is_running": true
+      },
+      {
+        "pid": 24172,
+        "created_at_utc": "2026-10-15T20:12:56.497909+00:00",
+        "cpu_seconds": 0.078125,
+        "rss_gib": 0.0093841552734375,
+        "is_running": true
+      },
+      {
+        "pid": 34308,
+        "created_at_utc": "2026-10-15T20:12:56.645213+00:00",
+        "cpu_seconds": 205.125,
+        "rss_gib": 0.9805793762207031,
+        "is_running": true
+      }
+    ]
+  },
+  "training_observation": {
+    "checked_at_utc": "2026-10-15T20:18:32.115150+00:00",
+    "status_at_check": "training",
+    "last_observed_optimizer_step": 5,
+    "total_optimizer_steps": 1827,
+    "last_step_seconds": 18.56,
+    "recent_losses": [
+      1.617,
+      1.596,
+      1.624
+    ],
+    "worker_pid": 34308,
+    "worker_rss_gib": 2.4303207397460938,
+    "idle_sleep_request": "active",
+    "power_report": "reports/full-roberta-base-power.json"
+  },
+  "completion_observation": {
+    "checked_at_utc": "2026-10-16T02:19:06.001936+00:00",
+    "status": "completed",
+    "report": "reports/full-roberta-base.json",
+    "verification": "reports/full-result-verification.json",
+    "development_accuracy": 0.5896805896805897,
+    "idle_sleep_request": "released"
+  }
+}

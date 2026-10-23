@@ -1,0 +1,100 @@
+{
+  "source": {
+    "model_id": "FacebookAI/roberta-base",
+    "url": "https://huggingface.co/FacebookAI/roberta-base",
+    "revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "license": "MIT"
+  },
+  "local_snapshot": ".cache/huggingface/hub/models--FacebookAI--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "files": {
+    "config.json": {
+      "size_bytes": 481,
+      "source_lfs_sha256": null,
+      "sha256": "ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9"
+    },
+    "merges.txt": {
+      "size_bytes": 456318,
+      "source_lfs_sha256": null,
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+    },
+    "model.safetensors": {
+      "size_bytes": 498818054,
+      "source_lfs_sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+      "sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81"
+    },
+    "tokenizer.json": {
+      "size_bytes": 1355863,
+      "source_lfs_sha256": null,
+      "sha256": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e"
+    },
+    "tokenizer_config.json": {
+      "size_bytes": 25,
+      "source_lfs_sha256": null,
+      "sha256": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce"
+    },
+    "vocab.json": {
+      "size_bytes": 898823,
+      "source_lfs_sha256": null,
+      "sha256": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655"
+    }
+  },
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.0",
+    "tokenizers": "0.23.3",
+    "safetensors": "0.8.0"
+  },
+  "model_class": "RobertaForMultipleChoice",
+  "tokenizer_class": "RobertaTokenizer",
+  "parameter_count": 124646401,
+  "trainable_parameter_count": 124646401,
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "loading_info": {
+    "missing_keys": [
+      "classifier.bias",
+      "classifier.weight",
+      "roberta.pooler.dense.bias",
+      "roberta.pooler.dense.weight"
+    ],
+    "unexpected_keys": [
+      "lm_head.bias",
+      "lm_head.dense.bias",
+      "lm_head.dense.weight",
+      "lm_head.layer_norm.bias",
+      "lm_head.layer_norm.weight"
+    ],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "checks": {
+    "file_integrity": "passed",
+    "pretrained_encoder_loading": "passed",
+    "real_training_example_id": "075e483d21c29a511267ef62bedc0461",
+    "correct_answer_label": "A",
+    "correct_answer_index": 0,
+    "input_shape": [
+      1,
+      5,
+      31
+    ],
+    "logits_shape": [
+      1,
+      5
+    ],
+    "loss": 1.5916836261749268,
+    "finite_gradients": "passed",
+    "gradient_parameter_count": 201,
+    "encoder_gradient_example": "roberta.encoder.layer.0.attention.self.query.weight",
+    "encoder_gradient_norm": 0.10132437944412231,
+    "classifier_gradient_norm": 2.400874376296997,
+    "optimizer_steps": 0,
+    "offline_loading": "passed",
+    "offline_forward_logits_shape": [
+      1,
+      5
+    ]
+  },
+  "initialization_note": "The multiple-choice classifier and any missing pooler weights are randomly initialized with seed 42.",
+  "training_status": "Forward/backward validation only. No parameter updates or fine-tuned checkpoint."
+}
