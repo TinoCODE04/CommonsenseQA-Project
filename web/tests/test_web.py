@@ -87,6 +87,26 @@ class EvidenceTests(unittest.TestCase):
 
 
 class AppTests(unittest.IsolatedAsyncioTestCase):
+    async def test_rejected_challenge_request_restores_controls_without_scoring(self):
+        import random
+        from web.challenge import start_round
+        demo = feature("app").build_app()
+        answer_id = next(key for key, fn in demo.fns.items() if fn.fn and fn.fn.__name__ == "answer")
+        failures = [dep for dep in demo.config["dependencies"]
+                    if dep["trigger_after"] == answer_id and dep["trigger_only_on_failure"]]
+        self.assertEqual(len(failures), 1, "Rejected queued predictions need a failure recovery event")
+        recovery = demo.fns[failures[0]["id"]]
+        self.assertFalse(recovery.queue)
+        session = start_round(feature("experiment").load_experiment().rows, rng=random.Random(42))
+        restored = recovery.fn(session, "C")
+        self.assertEqual(restored[0], session)
+        self.assertEqual(session.attempts, ())
+        self.assertTrue(restored[3]["interactive"])
+        self.assertEqual(restored[3]["value"], "C")
+        self.assertTrue(restored[6]["interactive"])
+        self.assertFalse(restored[7]["interactive"])
+        self.assertTrue(restored[8]["interactive"])
+
     async def test_app_builds_and_prediction_accepts_six_unlabeled_text_inputs(self):
         import asyncio
         asyncio.get_running_loop().set_debug(False)
@@ -94,6 +114,10 @@ class AppTests(unittest.IsolatedAsyncioTestCase):
         endpoints = [fn for fn in demo.fns.values() if fn.api_name == "predict"]
         self.assertEqual(len(endpoints), 1)
         self.assertEqual(len(endpoints[0].inputs), 6)
+        labels = [component["props"].get("label") for component in demo.config["components"]
+                  if component["type"] == "tabitem"]
+        self.assertIn("人机答题挑战", labels)
+        self.assertIn("微调变化分析", labels)
         self.assertEqual(demo.title, "常识问答实验台 · CommonsenseQA")
 
 

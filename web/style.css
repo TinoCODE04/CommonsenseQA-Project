@@ -68,6 +68,41 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px
 .metrics-table tbody tr:nth-child(2) { color: #1946b8; font-weight: 650; }
 #training-chart { margin: 16px 0; background: #fff; }
 .page-footer { display: flex; justify-content: space-between; gap: 15px; color: #63758c; font-size: 12px; border-top: 1px solid #d3dce9; padding: 19px 0 0; margin-top: 26px; }
+.challenge-scoreboard { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid #dce3ee; background: #fff; border-radius: 12px; overflow: hidden; }
+.challenge-scoreboard > div { padding: 18px 24px; border-right: 1px solid #e6ebf3; }
+.challenge-scoreboard > div:last-child { border-right: 0; }
+.challenge-scoreboard span { display: block; color: #53647b; font-size: 13px; }
+.challenge-scoreboard strong { display: block; color: #233653; font-size: 28px; font-variant-numeric: tabular-nums; margin-top: 5px; }
+.challenge-question { padding: 22px 0 12px; }
+.challenge-question h3 { font-size: 22px; color: #253853; line-height: 1.6; max-width: 75ch; overflow-wrap: anywhere; margin: 9px 0; }
+#challenge-options { background: #fff; border: 1px solid #dce3ee; padding: 17px; border-radius: 12px; }
+#challenge-options label { overflow-wrap: anywhere; }
+.challenge-waiting { color: #53647b; padding: 20px 0; line-height: 1.7; }
+.challenge-reveal, .round-complete, .change-case { background: #fff; border: 1px solid #dce3ee; border-radius: 14px; padding: 25px; color: #344b6c; }
+.challenge-reveal h3, .round-complete h3 { color: #233653; margin: 0 0 12px; }
+.challenge-reveal p, .round-complete p { line-height: 1.8; }
+.challenge-reveal .score-list { max-width: 800px; margin-top: 22px; }
+.round-complete { margin-top: 20px; }
+.review-scroll { overflow-x: auto; }
+.round-review { width: 100%; border-collapse: collapse; font-size: 14px; }
+.round-review th, .round-review td { padding: 13px 10px; text-align: left; border-bottom: 1px solid #e6ebf3; vertical-align: top; }
+.round-review td:first-child { width: 67%; overflow-wrap: anywhere; line-height: 1.6; }
+.round-review small { display: block; color: #63758c; white-space: nowrap; margin-top: 3px; }
+.change-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.change-stat { background: #fff; border: 1px solid #dce3ee; border-radius: 12px; padding: 20px; color: #53647b; }
+.change-stat > span:first-child { font-size: 14px; font-weight: 650; color: #344b6c; }
+.change-stat strong { display: block; font-size: 30px; color: #233653; margin: 8px 0; font-variant-numeric: tabular-nums; }
+.change-stat small { font-size: 13px; font-weight: 400; margin-left: 6px; }
+.change-stat p { font-size: 13px; line-height: 1.6; margin: 5px 0; }
+.change-stat.tone-0 { border-top: 3px solid #16836b; }
+.change-stat.tone-1 { border-top: 3px solid #bf5847; }
+.change-net { color: #4d5f77; line-height: 1.8; font-size: 14px; margin: 17px 0 8px; }
+.change-reference { line-height: 1.7; color: #126c59; }
+.change-case > .status { background: #edf2f9; color: #345477; margin-bottom: 15px; }
+.change-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 25px 0; gap: 30px; }
+.change-model { min-width: 0; }
+.change-model h4 { color: #233653; margin: 0 0 10px; font-size: 17px; }
+.change-model > p { font-size: 14px; margin-bottom: 22px; }
 @media (max-width: 700px) {
  #inference-layout { flex-direction: column !important; flex-wrap: nowrap !important; }
  .page-header { flex-direction: column; align-items: flex-start; gap: 12px; padding-bottom: 20px; }
@@ -81,4 +116,13 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px
  .case-question { font-size: 18px; }
  .metrics-table th, .metrics-table td { padding: 12px 8px; font-size: 13px; }
  .page-footer { flex-direction: column; gap: 5px; }
+ .challenge-scoreboard > div { padding: 15px 10px; }
+ .challenge-scoreboard strong { font-size: 23px; }
+ .challenge-question h3 { font-size: 19px; }
+ .challenge-reveal, .round-complete, .change-case { padding: 18px; }
+ .change-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ .change-stat { padding: 14px; }
+ .change-stat strong { font-size: 26px; }
+ .change-comparison { grid-template-columns: 1fr; gap: 28px; }
+ .change-model + .change-model { border-top: 1px solid #dce3ee; padding-top: 24px; }
 }

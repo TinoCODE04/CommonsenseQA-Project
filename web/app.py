@@ -22,6 +22,8 @@ import gradio as gr
 
 from web.experiment import load_experiment
 from web.inference import ModelRunner
+from web.challenge_ui import add_challenge_tab
+from web.changes_ui import add_changes_tab
 from web.presentation import (
     EMPTY_RESULT, example_values, experiment_details, render_case, render_overview, render_prediction,
 )
@@ -108,7 +110,7 @@ def build_app():
                     return [gr.update(interactive=True) for _ in editable_controls]
 
                 submit.click(begin_prediction, outputs=[prediction, timing, *editable_controls], queue=False, api_name=False).then(
-                    predict, inputs=inputs, outputs=[prediction, timing], api_name="predict", concurrency_limit=1, scroll_to_output=True,
+                    predict, inputs=inputs, outputs=[prediction, timing], api_name="predict", concurrency_id="local-model", concurrency_limit=1, scroll_to_output=True,
                 ).then(finish_prediction, outputs=editable_controls, queue=False, api_name=False)
                 sample_picker.change(load_example, inputs=sample_picker, outputs=[*inputs, prediction, timing], queue=False, api_name=False)
                 clear.click(lambda: (*([""] * 6), EMPTY_RESULT, "输入已清空，请填写题目与五个选项。"),
@@ -116,6 +118,7 @@ def build_app():
                 for textbox in inputs:
                     textbox.change(lambda: (EMPTY_RESULT, "输入已修改，请重新点击开始预测。"),
                                   outputs=[prediction, timing], queue=False, api_name=False)
+            add_challenge_tab(exp, runner)
             with gr.Tab("案例分析", id="cases"):
                 gr.Markdown("### 从答对与答错中观察模型\n这里展示已保存的验证集预测，切换案例无需运行模型。", elem_classes="intro")
                 with gr.Row():
@@ -129,6 +132,7 @@ def build_app():
                 for event in (outcome.change, query.submit, search.click):
                     event(filter_cases, inputs=[outcome, query], outputs=[case_picker, case_display, case_count], queue=False, api_name=False)
                 gr.Markdown("**记录来源**：微调后数据来自原训练运行保存的逐题评估。初始模型的逐题选择来自事后重建、补充复核，其准确率与原始汇总指标一致；原运行未保存微调前逐题预测。", elem_classes="provenance")
+            add_changes_tab(exp)
             with gr.Tab("实验结果", id="results"):
                 gr.HTML(render_overview(exp))
                 chart = ROOT / "reports/first-baseline-training.png"
